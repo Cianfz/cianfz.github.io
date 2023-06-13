@@ -1,0 +1,374 @@
+@font-face{font-family:gillsansc;font-style:normal;font-weight:400;src:local('GillSansC'),url(https://fonts.cdnfonts.com/s/13545/GillSansC_0.woff) format('woff')}
+@font-face{font-family:gillsansc;font-style:italic;font-weight:400;src:local('GillSansC'),url(https://fonts.cdnfonts.com/s/13545/GillSansC-Italic_0.woff) format('woff')}
+@font-face{font-family:gillsansc;font-style:normal;font-weight:700;src:local('GillSansC'),url(https://fonts.cdnfonts.com/s/13545/GillSansC-Bold_0.woff) format('woff')}
+@font-face{font-family:gillsansc;font-style:italic;font-weight:700;src:local('GillSansC'),url(https://fonts.cdnfonts.com/s/13545/GillSansC-BoldItalic_0.woff) format('woff')}
+@font-face{font-family:gillsanscondc;font-style:normal;font-weight:400;src:local('GillSansCondC'),url(https://fonts.cdnfonts.com/s/13545/GillSansCondC_0.woff) format('woff')}
+@font-face{font-family:gillsanslightc;font-style:normal;font-weight:300;src:local('GillSansLightC'),url(https://fonts.cdnfonts.com/s/13545/GillSansLightC_0.woff) format('woff')}
+@font-face{font-family:gillsansextraboldc;font-style:normal;font-weight:800;src:local('GillSansExtraBoldC'),url(https://fonts.cdnfonts.com/s/13545/GillSansExtraBoldC_0.woff) format('woff')}
+@font-face{font-family:gillsanscondblackc;font-style:normal;font-weight:900;src:local('GillSansCondBlackC'),url(https://fonts.cdnfonts.com/s/13545/GillSansCondBlackC_0.woff) format('woff')}
+@font-face{font-family:gillsanslightc;font-style:italic;font-weight:300;src:local('GillSansLightC'),url(https://fonts.cdnfonts.com/s/13545/GillSansLightC-Italic_0.woff) format('woff')}
+@font-face{font-family:gillsanscondc;font-style:normal;font-weight:700;src:local('GillSansCondC'),url(https://fonts.cdnfonts.com/s/13545/GillSansCondC-Bold_0.woff) format('woff')}
+
+@media (min-width: 1120px) {
+  .balance {
+      float: left;
+      max-width: 548px;
+  }
+  .content{
+    position:static;
+    max-width: 1120px;
+    margin: auto;
+    height: max-content;
+    gap: 24px;
+    justify-content: space-between;
+  }
+}
+
+body {
+	margin: 0;
+  padding: 0;
+
+	background: #171717;
+}
+
+header {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: auto;
+  overflow: hidden;
+  width: 100%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  box-sizing: border-box;
+  padding: 8px 16px;
+
+  background: #171717;
+}
+
+logo {
+  
+  /* logotype */
+  font-family:gillsansextraboldc;font-style:normal;font-weight:800;
+  font-size: 24px;
+  line-height: 16px;
+  /* or 109% */
+  position: 	auto;
+  /* leading-trim and text-edge are draft CSS properties.
+  
+  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+  */
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: -3px; 
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+status{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 8px;
+  gap: 8px;
+
+  background: #222222;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: none;
+  flex-grow: 0;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.working{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+
+  background: #21A063;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.caption{
+  font-family:gillsansc;
+  font-style:normal;
+  font-weight:400;
+  font-size: 12px;
+  line-height: 12px;
+  /* or 200% */
+
+  /* leading-trim and text-edge are draft CSS properties.
+
+  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+  */
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.textnormal{
+  font-family:gillsansc;
+  font-style: normal;
+  font-weight:600;
+  font-size: 16px;
+  line-height: 24px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.button {
+    border: none;
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color:#171717;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.content{
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  height:min-content;
+  margin:auto;
+  height: 100vh;
+  padding-top: 72px;
+  box-sizing: border-box;
+
+}
+
+.balance {
+  /* Auto layout */
+padding: 24px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 48px;
+min-width: 312px;
+box-sizing: border-box;
+width: 100%;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  background: url(img/arrow.svg) no-repeat right white;
+  background-position-x: 90%;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  width: 136px;
+  height: max-content;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #171717;
+  color: white;
+
+  appearance: none;
+}
+
+select:hover{
+  background-color: #222
+}
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display:flex;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.balanceTotal {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  color: #A9A9A9;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.textM{
+  font-family:gillsansc;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  /* or 80% */
+
+  /* leading-trim and text-edge are draft CSS properties.
+
+  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+  */
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.textOpen{
+  font-family:gillsansc;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 50% */
+
+  /* leading-trim and text-edge are draft CSS properties.
+
+  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+  */
+  leading-trim: both;
+  text-edge: cap;
+
+  color: #21A063;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  flex-grow: 0;
+}
+
+.opened{
+  /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 100%;
+height: auto;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.tag{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 8px;
+  background-color: #21A063;
+  font-family: gillsansc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  flex-grow: 0;
+}
+
+.openedCounter{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 70px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
